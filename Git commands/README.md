@@ -14,9 +14,9 @@ git config --global user.email omar.riahi@mail.com
 ```git config --global  --edit user.email omar.riahi@mail.com```
 
 **Initialise a Git repo**
-`
+``
 git init
-`
+``
 
 **Show the status of the local repo (files to stage, to commit…):**
 ```git status```
