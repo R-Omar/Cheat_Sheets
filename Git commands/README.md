@@ -1,11 +1,13 @@
-#Display Git configuration:
+**Display Git configuration:**
 ```
 git config --list
 ```
 
-#Add settings to Git configuration: 
-```git config --global user.name "Omar RIAHI"```
-```git config --global user.email omar.riahi@mail.com```
+**Add settings to Git configuration:**
+```
+git config --global user.name "Omar RIAHI"
+git config --global user.email omar.riahi@mail.com
+```
 
 Remove/edit a setting from Git configuration:
 ```git config --global  --unset user.email```
