@@ -21,7 +21,9 @@ git init
 ```
 
 **Show the status of the local repo (files to stage, to commit…):**
-```git status```
+```
+git status
+```
 
 **Add all/tracked files to the staging:**
 ```
