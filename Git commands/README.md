@@ -1,3 +1,5 @@
+# Git commands
+
 **Display Git configuration:**
 ```
 git config --list
@@ -65,7 +67,8 @@ git log
 git log --oneline
 git log -1 (latest commit)
 git log -2 (the two latest) 
-git log stat```
+git log stat
+```
 
 **Create a branch:**
 ```
