@@ -1,7 +1,7 @@
-Display Git configuration:
+#Display Git configuration:
 ```git config --list```
 
-Add settings to Git configuration: 
+#Add settings to Git configuration: 
 ```git config --global user.name "Omar RIAHI"```
 ```git config --global user.email omar.riahi@mail.com```
 
@@ -12,14 +12,14 @@ Remove/edit a setting from Git configuration:
 Initialise a Git repo
 ```git init```
 
-Show the status of the local repo (files to stage, to commit…)
+Show the status of the local repo (files to stage, to commitâ€¦)
 ```git status```
 
 Add all the modified files to the staging:
 ```git add .```
 
 Commit changes :
-```git commit –a –m "commit message"```
+```git commit â€“a â€“m "commit message"```
 
 What the remote repo the local is mapped to:
 ```git remote -v```
@@ -34,7 +34,7 @@ Pull remote repo to local repo:
 ```git pull origin master```
 
 Difference between the files in the stage and the previous commit:
-```git diff –staged```
+```git diff â€“staged```
 
 Viewing the commit log:
 ```git log```
@@ -44,7 +44,7 @@ Viewing the commit log:
 git log stat
 
 Create a branch:
-```git checkout –b new _branch```
+```git checkout â€“b new _branch```
 
 Switch to another branch:
 ```git checkout master```
