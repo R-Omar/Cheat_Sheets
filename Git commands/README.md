@@ -1,5 +1,7 @@
 #Display Git configuration:
-```git config --list```
+```
+git config --list
+```
 
 #Add settings to Git configuration: 
 ```git config --global user.name "Omar RIAHI"```
