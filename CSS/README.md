@@ -23,7 +23,7 @@ The last declared class take precedence id attribute will always take precedence
 
 **CSS Variables:**
 ```css
-:root{ 							/* other_class inherit from class, root is the html element  */
+:root{ 					/* other_class inherit from class, root is the html element  */
 	--variable_name: value;		/* globale variable */
 }
 
@@ -44,13 +44,13 @@ The last declared class take precedence id attribute will always take precedence
 .class{
 	font-family: monospace;
 	font-size: 14px;
-	text-align: left;					/* right, center or justify */
+	text-align: left;				/* right, center or justify */
 	text-decoration: underline;			/* <u></u> */
-	font-weight: bold;					/* <strong></strong> */
-	font-style: italic;					/* <em></em> */
-	text-decoration: line-through;		/* <s></s> */
+	font-weight: bold;				/* <strong></strong> */
+	font-style: italic;				/* <em></em> */
+	text-decoration: line-through;			/* <s></s> */
 	text-transform: uppercase;			/* lowercase, uppercase, capitalize, initial, inherit, none(default) */
-	line-height: 25px; 					/* hange the height of each line in a block of text */
+	line-height: 25px; 				/* hange the height of each line in a block of text */
 }
 ```
 
@@ -65,26 +65,26 @@ a:hover {
 ```css
 p {
   position: relative;			/* Relative to its current position in the normal flow of the page */
-  bottom: 10px;					/* top, left, right: offests */
-  z-index: number;				/* specify the order of how elements are stacked on top of one another */
+  bottom: 10px;				/* top, left, right: offests */
+  z-index: number;			/* specify the order of how elements are stacked on top of one another */
 }
 
 p {
   position: absolute;			/* Lock an element in place relative to its parent container */
-  bottom: 10px;					/* top, left, right: offests */
+  bottom: 10px;				/* top, left, right: offests */
 }
 
 .navbar {
-  position: fixed;				/* Lock an Element to the Browser Window */
-  bottom: 10px;					/* top, left, right: offests */
+  position: fixed;			/* Lock an Element to the Browser Window */
+  bottom: 10px;				/* top, left, right: offests */
 }
 
 .navbar {
-  float: left;					/* rigt: push the element to the left or right of it containing parent element */
+  float: left;				/* rigt: push the element to the left or right of it containing parent element */
 }
 
 div {
-	margin: auto;				/* center a block element horizontally */
+	margin: auto;			/* center a block element horizontally */
 }
 
 ```
@@ -109,11 +109,11 @@ div:hover {
   }
 }
 
-#anim {                                  /* use the animation */
+#anim {                                  	/* use the animation */
   animation-name: colorful;        
   animation-duration: 3s;
-  animation-fill-mode: forwards;       	/* specifies the style applied to an element when the animation has finished */
-  animation-iteration-count: number;	/* infinite, control how many times to loop through the animation */
+  animation-fill-mode: forwards;       		/* specifies the style applied to an element when the animation has finished */
+  animation-iteration-count: number;		/* infinite, control how many times to loop through the animation */
 }
 ```
 
@@ -125,7 +125,7 @@ Media Queries are a new technique introduced in CSS3 that change the presentatio
 	/* CSS Rules */ 
 }
 
-img {					/* make an image repsonsive */
+img {	/* make an image repsonsive */
 	display: block;
 	max-width: 100%;
 	height: auto;
@@ -164,18 +164,18 @@ Gird container properties
 	grid-template-rows: 50px 50px;      	/* create two rows that are each 50px tall on the grid (fr, auto, %) */
 	grid-column-gap: 10px;              	/* create a Column Gap */
 	grid-row-gap: 5px;                  	/* create a row gap */
-	grid-gap: 10px 5px;               		/* the first one to set the gap between the rows and the second value for the columns */
+	grid-gap: 10px 5px;               	/* the first one to set the gap between the rows and the second value for the columns */
 	justify-items: stretch;             	/* center, start, end align all the items horizontally */
 	align-items: stretch;               	/* center, start, end align all the items vertically */
 	grid-template-areas:                	/* Divide the Grid Into an Area Template */
   		"header header header"
   		"advert content content"
   		"advert footer footer";
-	grid-template-rows: repeat(100, 50px);     				/* Create the 100 row grid, each row at 50px tall */
-	grid-template-columns: 100px minmax(50px, 200px);		/* Limit Item Size Using the minmax Function */
-	grid-template-columns:                           		/* Create Flexible Layouts */
+	grid-template-rows: repeat(100, 50px);     		/* Create the 100 row grid, each row at 50px tall */
+	grid-template-columns: 100px minmax(50px, 200px);	/* Limit Item Size Using the minmax Function */
+	grid-template-columns:                           	/* Create Flexible Layouts */
 		repeat(auto-fill, minmax(60px, 1fr));
-	grid-template-columns:                           		/* Create Flexible Layouts */
+	grid-template-columns:                           	/* Create Flexible Layouts */
 	repeat(auto-fit, minmax(60px, 1fr)); 
 
 }
@@ -183,11 +183,11 @@ Gird container properties
 Gird item properties
 ```css
 .grid_items {
-	grid-column: 1 / 3;                 				/* To control the number of columns an item will consume start/stop */
-	grid-row: 1 / 3;                    				/* To control the number of rows an item will consume start/stop */
-	justify-self: stretch;              				/* center, start, end to align the content's position within the cell horizontally */
-	align-self: stretch;                				/* center, start, end to align the content's position within the cell vertically */
-	grid-area: header; 									/* place an item in a custom area by referencing the name */
-	grid-area: col_start/row_start/col_end/row_end;     /* place an item in a custom area without a template */
+	grid-column: 1 / 3;                 			/* To control the number of columns an item will consume start/stop */
+	grid-row: 1 / 3;                    			/* To control the number of rows an item will consume start/stop */
+	justify-self: stretch;              			/* center, start, end to align the content's position within the cell horizontally */
+	align-self: stretch;                			/* center, start, end to align the content's position within the cell vertically */
+	grid-area: header; 					/* place an item in a custom area by referencing the name */
+	grid-area: col_start/row_start/col_end/row_end;     	/* place an item in a custom area without a template */
 }
 ```
