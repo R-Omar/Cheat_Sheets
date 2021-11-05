@@ -39,13 +39,7 @@ Components are the main building block for Angular applications. Each component 
 - A Typescript class that defines behavior
 - Optionally, CSS styles applied to the template
 ### **Create a component**
-```console
-ng generate component component-name
-```
-or 
-```console
-ng g c component-name
-```
+`ng generate component component-name` or `ng g c component-name`
 
 ## **Data binding**
 ### **String Interpolation and proprety binding (code TS -> HTML Template)**
