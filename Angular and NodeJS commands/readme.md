@@ -8,14 +8,14 @@ npm install -g @angular/cli
 ng new app-name --skip-tests=true
 ```
 **Run the application and open it on the browser**
-```console
+##### ```console
 ng serve --open
 ```
 **Add a dependecy and save it on the config file package.json**
 ```console
 npm install package@version
 ```
-**Add Bootstrap to a project**
+**Exemple add Bootstrap to a project**
 ```console
 npm install bootsrap@latest
 ```
@@ -41,7 +41,7 @@ Components are the main building block for Angular applications. Each component 
 ### **Create a component**
 `ng generate component component-name` or `ng g c component-name`
 
-## **Data binding**
+### **Data binding**
 ### **String Interpolation and proprety binding (code TS -> HTML Template)**
 On the TS class:
 ```javascript
@@ -115,7 +115,7 @@ on child component HTML template
 ```
 
 ## **Directives**
-### **structural directives**
+### **Structural directives**
 #### **NgIf**
 ```html
 <div *ngIf="showMessage === true">    <!-- condition or function that returns true or false -->
@@ -128,7 +128,7 @@ on child component HTML template
     <li *ngFor="let elt of arr">{{elt}}</li>  <!-- the array can be an array of primitive types or an array of objects -->
 </ul>
 ```
-### **attribute directives**
+### **Attribute directives**
 #### **NgStyle**
 ```html
 <div [ngStyle]="{color : functionName()}"> <!-- ngStyle takes an object, functionName is defined in TS class-->
@@ -157,3 +157,38 @@ Pipes are simple functions to use in template expressions to accept an input val
 
 
 ## **Services**
+Dependencies are services or objects that a class needs to perform its function. Dependency injection is a design pattern in which a class requests dependencies from external sources rather than creating them.
+<br>To generate a service:
+```console
+ng generate service service-name
+```
+To use a service in all the apllication, in the app.module.ts :
+```javascript
+import {servicClasseName } from "./...";
+
+providers :[
+    serviceName
+]
+```
+To use the instance of the service in a component:
+```javascript
+varName;
+constructor(private service : ServiceClassName){}
+ngOnIni(){
+    varName = service.varName ;
+}
+```
+
+## Routing
+in app.module.ts 
+```javascript
+const appRoutes: Routes = [
+    {path: 'pathName', componenent: componentName }
+]
+
+imports: [
+    RouterModule.forRoot(appRoutes)
+```
+
+## Observales
+An observale is an object that sends data in time, each observables is associated with an observer a block of code that will be executed each time the observable sends an information.
