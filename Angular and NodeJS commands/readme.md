@@ -17,7 +17,7 @@ npm install package@version
 ```
 **Exemple add Bootstrap to a project**
 ```console
-npm install bootsrap@latest
+npm install bootstrap@latest
 ```
 Configure angular.json
 ```json
