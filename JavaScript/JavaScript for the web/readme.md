@@ -146,3 +146,8 @@ requests().then(function(allResults) {
 });
 ```
 
+## linter, minifier, bundler, transpiler
+- un linter va vous permettre de trouver des erreurs dans votre code et de mettre en place des conventions de code (JSLint, ESLint)
+- Un minifier va vous permettre de réduire la taille de votre code pour que les navigateurs le chargent plus vite (node-minify, UglifyJS)
+- Un bundler va regrouper tous vos fichiers en un seul afin que le navigateur soit plus rapide à charger votre code (Webpack)
+- Un transpiler va vous permettre d’utiliser les nouvelles fonctionnalités du langage JavaScript tout en restant compatible avec tous les navigateurs (Babel)
