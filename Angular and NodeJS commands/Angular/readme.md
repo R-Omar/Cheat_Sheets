@@ -8,10 +8,10 @@ npm install -g @angular/cli
 ng new app-name --skip-tests=true
 ```
 **Run the application and open it on the browser**
-##### ```console
+```console
 ng serve --open
 ```
-**Add a dependecy and save it on the config file package.json**
+**Add a dependency and save it on the config file package.json**
 ```console
 npm install package@version
 ```
@@ -42,7 +42,7 @@ Components are the main building block for Angular applications. Each component 
 `ng generate component component-name` or `ng g c component-name`
 
 ### **Data binding**
-### **String Interpolation and proprety binding (code TS -> HTML Template)**
+### **String Interpolation and property binding (code TS -> HTML Template)**
 On the TS class:
 ```javascript
 export class component-name implements onInit {
@@ -56,7 +56,7 @@ export class component-name implements onInit {
 On the HTML template:
 ```html
 {{varName}} or {{functionName()}}
-<button [diabled]="isDisabled">button</button>  <!-- [proprety] -->
+<button [disabled]="isDisabled">button</button>  <!-- [proprety] -->
 ```
 ### **Event binding (HTML Template -> Code TS)**
 On the TS class:
@@ -191,4 +191,4 @@ imports: [
 ```
 
 ## Observales
-An observale is an object that sends data in time, each observables is associated with an observer a block of code that will be executed each time the observable sends an information.
+An observable is an object that sends data in time, each observables is associated with an observer a block of code that will be executed each time the observable sends an information.
